@@ -1,0 +1,6 @@
+<button mat-raised-button (click)="openDialog()">Pick an animal</button>
+<br/>
+<br/>
+<div *ngIf="animal | async as animalName">
+  Selected animal: {{animalName}}
+</div>
